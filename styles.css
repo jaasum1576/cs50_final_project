@@ -1,0 +1,220 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li, button {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Set background and text colors */
+body {
+  background: linear-gradient(135deg, #71bde5, #8db7d6, #a5a9c8);
+  color: #333; /* Dark text color */
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* White background for the container */
+  border-radius: 10px;
+}
+
+/* Task List styles */
+.task-list {
+  margin-bottom: 30px;
+}
+
+.task-list h2 {
+  margin-bottom: 10px;
+  font-size: 18px; /* Reduced font size for headings */
+}
+
+#task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#task-list li {
+  margin-bottom: 8px;
+  font-size: 14px; /* Reduced font size for tasks */
+  cursor: pointer;
+}
+
+#task-input {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#add-task-btn {
+  padding: 10px 16px; /* Increased padding for buttons */
+  margin-left: 10px;
+  background-color: #000; /* Black button color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#add-task-btn:hover {
+  background-color: #333; /* Slightly darker button color on hover */
+}
+
+/* Pomodoro Timer styles */
+.pomodoro-timer {
+  margin-bottom: 30px;
+}
+
+.pomodoro-timer h2 {
+  margin-bottom: 20px; /* Increased margin between heading and timer */
+  font-size: 18px; /* Reduced font size for headings */
+}
+
+#timer-display {
+  margin-bottom: 30px; /* Increased margin between timer and buttons */
+  font-size: 48px; /* Increased font size for the timer display */
+  font-weight: bold;
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-controls button {
+  padding: 12px 20px; /* Increased padding for buttons */
+  margin: 0 10px; /* Increased spacing between buttons */
+  background-color: #000; /* Black button color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 50px; /* Make the buttons circular */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.timer-controls button:hover {
+  background-color: #333; /* Slightly darker button color on hover */
+}
+
+
+/* Additional styles for a more creative and pleasing design */
+/* Task List */
+.task-list {
+  background-color: #f0f5f7; /* Light blue background for the to-do list */
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.task-list li {
+  padding: 6px;
+  border-radius: 4px;
+  background-color: #e0f0f1; /* Light turquoise background for tasks */
+  transition: background-color 0.2s ease;
+}
+
+.task-list li:hover {
+  background-color: #c0e0e1; /* Slightly darker turquoise background on hover */
+}
+
+.container {
+  transition: box-shadow 0.2s ease;
+}
+
+.container:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2); /* Slightly darker shadow on hover */
+}
+
+/* Tab Management styles */
+.tab-management {
+  margin-bottom: 30px;
+  padding: 20px; /* Add padding to create space around the content */
+}
+
+.tab-management h2 {
+  margin-bottom: 10px;
+  font-size: 18px; /* Reduced font size for headings */
+}
+
+.tab-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#view-all-tabs-btn {
+  padding: 8px 12px;
+  background-color: #000; /* Black button color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#view-all-tabs-btn:hover {
+  background-color: #333; /* Slightly darker button color on hover */
+}
+
+#search-input {
+  flex: 1; /* Fill available space within the flex container */
+  margin-left: 10px; /* Add margin to the left to separate the input from the button */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#tab-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#tab-list li {
+  padding: 8px;
+  border-bottom: 1px solid #ccc; /* Horizontal line to separate tabs */
+  cursor: pointer; /* Add cursor pointer on hover */
+}
+
+#tab-list li:last-child {
+  border-bottom: none; /* Remove line for the last tab */
+}
+
+/* Hover effect for tab text color */
+#tab-list li span {
+  transition: color 0.2s ease;
+}
+
+#tab-list li:hover span {
+  color: #e74c3c; /* Change text color on hover */
+}
+
+/* Additional styles for the congratulations message */
+.congratulations-message {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px;
+  background-color: #55a630; /* Green background for the message */
+  color: #fff; /* White text color */
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for the message */
+  z-index: 999; /* Ensure the message appears above other elements */
+  font-weight: bold;
+  opacity: 0;
+  animation: fade-in-out 3s ease; /* Animation to fade in and out the message */
+}
+
+@keyframes fade-in-out {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

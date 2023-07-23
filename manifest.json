@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Task and Todo List Manager",
+  "version": "1.0",
+  "description": "A Chrome extension for managing tasks and to-do lists and helping with focused learning.",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "permissions": ["tabs", "notifications"],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "icon16.png"
+  }
+}
