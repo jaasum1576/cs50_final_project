@@ -1,5 +1,5 @@
 # Chrome Extension - Task Manager & Tab Organizer
-#### Video Demo:  <URL HERE>
+#### Video Demo: https://youtu.be/RwOVXbkGdPA <URL HERE>
 
 ## Introduction
 This Chrome Extension is a flexible productivity tool made to assist users in task management, maintaining attention with a Pomodoro Timer, and effectively managing open tabs. The extension seeks to preserve an aesthetically beautiful design while offering a seamless and easy user experience.
